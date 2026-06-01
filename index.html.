@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* Cores e Estilos Gerais */
+        :root {
+            --azul-escuro: #0B2545;
+            --azul-claro: #134074;
+            --verde-principal: #2A9D8F;
+            --verde-claro: #E8F5E9;
+            --branco: #FFFFFF;
+            --cinza-texto: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--verde-claro);
+            color: var(--cinza-texto);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, var(--azul-escuro), var(--verde-principal));
+            color: var(--branco);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: var(--azul-claro);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            display: inline-block;
+            color: var(--branco);
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--verde-principal);
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--branco);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--azul-escuro);
+            border-bottom: 3px solid var(--verde-principal);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo do Quiz */
+        .quiz-container {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 5px solid var(--azul-claro);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .options label {
+            display: block;
+            background: var(--branco);
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .options label:hover {
+            background-color: #e0f2f1;
+            border-color: var(--verde-principal);
+        }
+
+        .options input {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: var(--azul-claro);
+            color: var(--branco);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--verde-principal);
+        }
+
+        #resultado {
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--azul-escuro);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a alta produção e a preservação do meio ambiente</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">O Conceito</a>
+        <a href="#faep">A FAEP</a>
+        <a href="#quiz">Desafio Agro Sustentável</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="sobre">
+            <h2>Equilíbrio entre Produção e Meio Ambiente</h2>
+            <p>O futuro da agricultura depende da nossa capacidade de inovar de forma sustentável. O <strong>Agro Forte</strong> demonstra que é perfeitamente possível alcançar recordes de produtividade no campo e, ao mesmo tempo, proteger os recursos naturais.</p>
+            <br>
+            <p>Através de práticas como o plantio direto, rotação de culturas, manejo integrado de pragas e o uso de energias renováveis (como a solar e a biomassa), o produtor rural brasileiro se posiciona na vanguarda da sustentabilidade global.</p>
+        </section>
+
+        <section id="faep">
+            <h2>O Papel da FAEP</h2>
+            <p>A <strong>FAEP (Federação da Agricultura do Estado do Paraná)</strong> atua firmemente na defesa dos interesses dos produtores rurais, promovendo a capacitação e o desenvolvimento sustentável no campo.</p>
+            <br>
+            <p>Por meio de cursos do SENAR-PR e orientações técnicas, a FAEP auxilia o homem do campo a adequar suas propriedades às legislações ambientais, adotar tecnologias de precisão e garantir que a força econômica do agro caminhe lado a lado com a conservação ambiental.</p>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz: Você conhece o Agro Sustentável?</h2>
+            <p style="margin-bottom: 1rem;">Teste seus conhecimentos sobre as práticas modernas do campo!</p>
+            
+            <div class="quiz-container">
+                <form id="quizForm">
+                    <div class="question">1. Qual das seguintes técnicas ajuda a evitar a erosão do solo e mantém a umidade?</div>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="errado1"> Queimada controlada</label>
+                        <label><input type="radio" name="q1" value="correto"> Sistema de Plantio Direto</label>
+                        <label><input type="radio" name="q1" value="errado2"> Desmatamento das encostas</label>
+                    </div>
+
+                    <br>
+
+                    <div class="question">2. Quem a FAEP representa e auxilia diretamente no Paraná?</div>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="errado1"> Apenas indústrias automobilísticas</label>
+                        <label><input type="radio" name="q2" value="errado2"> Empresas de tecnologia urbana</label>
+                        <label><input type="radio" name="q2" value="correto"> Os produtores rurais e sindicatos patronais do campo</label>
+                    </div>
+
+                    <button type="button" onclick="calcularResultado()">Enviar Respostas</button>
+                </form>
+                <div id="resultado"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Agro Forte, Futuro Sustentável. Desenvolvido para o GitHub Pages.</p>
+    </footer>
+
+    <script>
+        function calcularResultado() {
+            const form = document.getElementById('quizForm');
+            let pontuacao = 0;
+            let totalPerguntas = 2;
+
+            // Validação das respostas
+            if (form.q1.value === "correto") pontuacao++;
+            if (form.q2.value === "correto") pontuacao++;
+
+            // Exibição do resultado
+            const resultadoDiv = document.getElementById('resultado');
+            if (!form.q1.value || !form.q2.value) {
+                resultadoDiv.style.color = "red";
+                resultadoDiv.innerHTML = "Por favor, responda todas as perguntas!";
+            } else {
+                resultadoDiv.style.color = "var(--azul-escuro)";
+                resultadoDiv.innerHTML = `Você acertou ${pontuacao} de ${totalPerguntas} perguntas! ` + 
+                    (pontuacao === totalPerguntas ? "🎉 Parabéns! Você entende tudo de agro sustentável!" : "👍 Bom esforço! Continue estudando sobre o tema.");
+            }
+        }
+    </script>
+</body>
+</html>
